@@ -14,14 +14,14 @@ void setup(){
 void loop(){
   digitalWrite(LED_G_PIN,HIGH);
   digitalWrite(LED_R_PIN,LOW);
+  while(digitalRead(SW_PIN));
+  
   delay(1000);
   digitalWrite(LED_G_PIN,LOW);
-  delay(1000);
+  delay(2000);
+  
   digitalWrite(LED_R_PIN,HIGH);
-  delay(1000);
-
-
-
+  delay(5000);
 }
 
   
